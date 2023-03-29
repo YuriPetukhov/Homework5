@@ -1,17 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        task1();
-        task2();
-        task3();
-        task4();
-        task5();
+        task1(0);
+        task2(1, 2015);
+        task3(2021);
+        task4(95, 1);
+        task5(1);
     }
 
-    public static void task1 () {
+    public static void task1 (int clientOS) {
         System.out.println("Задача 1");
-
-        int clientOS;
-        clientOS = 0;
 
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке: ");
@@ -22,13 +19,8 @@ public class Main {
         }
     }
 
-    public static void task2 () {
+    public static void task2 (int clientOS, int clientDeviceYear) {
         System.out.println("Задача 2");
-
-        int clientOS;
-        clientOS = 0;
-        int clientDeviceYear;
-        clientDeviceYear = 2015;
 
         if (clientDeviceYear >= 2015) {
             if (clientOS == 0) {
@@ -42,18 +34,15 @@ public class Main {
         if (clientDeviceYear < 2015) {
             if (clientOS == 0) {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке: ");
-            } else if (clientOS == 1 && clientDeviceYear < 2015) {
+            } else if (clientOS == 1) {
                 System.out.println("Установите облегченную версию приложения для Android по ссылке: ");
             } else {
                 System.out.println("К сожалению, не удается определить операционную систему!");
             }
         }
     }
-    public static void task3 () {
+    public static void task3 (int year) {
         System.out.println("Задача 3");
-
-        int year;
-        year = 2021;
 
         if (year%400 == 0 && year%100 != 0) {
             System.out.println(year + " год является високосным");
@@ -65,13 +54,8 @@ public class Main {
 
     }
 
-    public static void task4 () {
+    public static void task4 (int deliveryDistance, int deliveryTime) {
         System.out.println("Задача 4");
-
-        int deliveryDistance;
-        deliveryDistance = 95;
-        int deliveryTime;
-        deliveryTime = 1;
 
         if (deliveryDistance < 20) {
             System.out.println("Потребуется дней: " + deliveryTime);
@@ -87,12 +71,8 @@ public class Main {
             System.out.println("Доставки нет.");
         }
     }
-
-    public static void task5 () {
+    public static void task5 (int monthNumber) {
         System.out.println("Задача 5");
-
-        int monthNumber;
-        monthNumber = 1;
 
         switch (monthNumber) {
             case 12:
