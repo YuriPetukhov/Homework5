@@ -34,7 +34,7 @@ public class Main {
         if (clientDeviceYear < 2015) {
             if (clientOS == 0) {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке: ");
-            } else if (clientOS == 1 && clientDeviceYear < 2015) {
+            } else if (clientOS == 1) {
                 System.out.println("Установите облегченную версию приложения для Android по ссылке: ");
             } else {
                 System.out.println("К сожалению, не удается определить операционную систему!");
