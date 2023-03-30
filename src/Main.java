@@ -87,7 +87,7 @@ public class Main {
                 break;
             case 6:
             case 7:
-            case 98:
+            case 8:
                 System.out.println("Сейчас лето");
                 break;
             case 9:
