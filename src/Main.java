@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1(0);
         task2(1, 2015);
-        task3(2021);
+        task3(2100);
         task4(95, 1);
         task5(1);
     }
@@ -44,7 +44,7 @@ public class Main {
     public static void task3 (int year) {
         System.out.println("Задача 3");
 
-        if (year%400 == 0 && year%100 != 0) {
+        if (year%400 == 0 || year%100 != 0) {
             System.out.println(year + " год является високосным");
         } else if (year%4 == 0 && year%100 != 0) {
             System.out.println(year + " год является високосным");
@@ -87,7 +87,7 @@ public class Main {
                 break;
             case 6:
             case 7:
-            case 98:
+            case 8:
                 System.out.println("Сейчас лето");
                 break;
             case 9:
